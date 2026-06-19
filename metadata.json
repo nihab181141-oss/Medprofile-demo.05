@@ -1,0 +1,6 @@
+{
+  "name": "Doctor Portfolio Website",
+  "description": "A premium, ultra-polished, and responsive medical portfolio website with English and Bengali support, interactive appointment booking, health articles, reviews, and a smooth modern UI design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

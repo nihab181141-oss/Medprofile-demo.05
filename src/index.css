@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Outfit", sans-serif;
+
+  --color-brand-primary: #0f4c5c; /* Deep Teal */
+  --color-brand-secondary: #e5f1f4; /* Soft Mint / Pale Aqua */
+  --color-brand-accent: #fb8b24; /* Warm Gold / Coral Accent */
+  --color-brand-dark: #1d2a30; /* Dark Slate */
+  --color-brand-light: #fbfbf9; /* Warm off-white */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-light);
+  color: var(--color-brand-dark);
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-light);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Base custom interactive states */
+.focus-ring {
+  outline: none;
+  border-color: var(--color-brand-primary);
+  box-shadow: 0 0 0 3px rgba(15, 76, 92, 0.15);
+}
+
+/* Custom grid decorations */
+.grid-dots {
+  background-image: radial-gradient(rgba(15, 76, 92, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
